@@ -1,4 +1,4 @@
-Feature: Testing weather for London
+Feature: Testing weather for weather
   Scenario: Weather test
     When we are getting weather from server
     Then id is 300

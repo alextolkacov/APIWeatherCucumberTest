@@ -1,11 +1,17 @@
 package model;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-
 public class Response {
     private Coord coord;
     private Weather weather;
+    private Main main;
+
+    public Main getMain() {
+        return main;
+    }
+
+    public void setMain(Main main) {
+        this.main = main;
+    }
 
     public Weather getWeather() {
         return weather;

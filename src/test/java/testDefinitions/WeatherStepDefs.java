@@ -1,9 +1,14 @@
 package testDefinitions;
 
+import com.google.gson.JsonObject;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import model.Response;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.junit.Assert;
+
+import static org.junit.Assert.*;
 
 public class WeatherStepDefs {
     private WeatherRequester weatherRequester = new WeatherRequester();
@@ -16,21 +21,21 @@ public class WeatherStepDefs {
 
     @Then("id is (.*)")
     public void check_id(String id){
-        Assert.assertEquals("Wrong id", id, response.getWeather().getId());
+        assertEquals("Wrong id", id, response.getWeather().getId());
     }
 
     @Then("main is (.*)")
     public void check_main(String main){
-        Assert.assertEquals("Wrong main", main, response.getWeather().getMain());
+        assertEquals("Wrong main", main, response.getWeather().getMain());
     }
 
     @Then("description is (.*)")
     public void check_description(String description){
-        Assert.assertEquals("Wrong description", description, response.getWeather().getDescription());
+        assertEquals("Wrong description", description, response.getWeather().getDescription());
     }
 
     @Then("icon is (.*)")
     public void check_icon(String icon){
-        Assert.assertEquals("Wrong icon", icon, response.getWeather().getIcon());
+        assertEquals("Wrong icon", icon, response.getWeather().getIcon());
     }
 }

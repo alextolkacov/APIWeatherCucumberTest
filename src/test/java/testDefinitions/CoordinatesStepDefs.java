@@ -3,9 +3,10 @@ package testDefinitions;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import model.Response;
-import org.junit.Assert;
 
 import java.math.BigDecimal;
+
+import static org.junit.Assert.*;
 
 public class CoordinatesStepDefs {
     private WeatherRequester weatherRequester = new WeatherRequester();
@@ -18,12 +19,12 @@ public class CoordinatesStepDefs {
 
     @Then("lon is (.*)")
     public void check_lon(BigDecimal lon){
-        Assert.assertEquals("Wrong LON", lon, response.getCoord().getLon());
+        assertEquals("Wrong LON", lon, response.getCoord().getLon());
     }
 
     @Then("lat is (.*)")
     public void check_lat(BigDecimal lat){
-        Assert.assertEquals("Wrong LAT", lat, response.getCoord().getLat());
+        assertEquals("Wrong LAT", lat, response.getCoord().getLat());
     }
 
 }
