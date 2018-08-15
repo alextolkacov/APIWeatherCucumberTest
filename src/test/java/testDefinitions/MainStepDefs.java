@@ -6,7 +6,7 @@ import model.Response;
 
 import java.math.BigDecimal;
 
-import static org.junit.Assert.*;
+import static junit.framework.TestCase.assertEquals;
 
 public class MainStepDefs {
     private WeatherRequester weatherRequester = new WeatherRequester();
