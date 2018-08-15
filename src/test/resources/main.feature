@@ -1,8 +1,4 @@
-# new feature
-# Tags: optional
-
 Feature: Testing main for weather
-
   Scenario: Main test
     When we are getting main from server
     Then temp is 280.32
