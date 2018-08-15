@@ -1,13 +1,9 @@
 package testDefinitions;
 
-import com.google.gson.JsonObject;
+
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import model.Response;
-import org.json.JSONArray;
-import org.json.JSONObject;
-import org.junit.Assert;
-
 import static org.junit.Assert.*;
 
 public class WeatherStepDefs {
