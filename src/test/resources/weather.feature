@@ -1,7 +1,29 @@
-Feature: Testing weather for weather
-  Scenario: Weather test
-    When we are getting weather from server
+Feature: Testing coordinates for weather
+  Scenario: Coordinates test
+    When we are getting coordinates from server
+    Then lon is -0.13
+    And lat is 51.51
     Then id is 300
     And main is Drizzle
     And description is light intensity drizzle
     And icon is 09d
+    Then base is stations
+    Then temp is 280.32
+    And pressure is 1021
+    And humidity is 81
+    And temp_min is 279.15
+    And temp_max is 281.15
+    Then visibility is 10000
+    Then speed is 4.1
+    And deg is 80
+    Then all is 90
+    Then dt is 1485789600
+    Then type is 1
+    And sys id is 5091
+    And message is 0.0103
+    And country is GB
+    And sunrise is 1485762037
+    And sunset is 1485794875
+    Then city id is 2643743
+    Then name is London
+    Then cod is 200
