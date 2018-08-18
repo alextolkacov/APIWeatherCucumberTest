@@ -16,12 +16,10 @@ public class WeatherStepDefs {
     public void get_weather(){
         response = weatherRequester.getWeather();
     }
-
     @Then("lon is (.*)")
     public void check_lon(BigDecimal lon){
         assertEquals("Wrong LON", lon, response.getCoord().getLon());
     }
-
     @Then("lat is (.*)")
     public void check_lat(BigDecimal lat){
         assertEquals("Wrong LAT", lat, response.getCoord().getLat());
@@ -30,22 +28,18 @@ public class WeatherStepDefs {
     public void check_id(String id){
         assertEquals("Wrong id", id, response.getWeather().getId());
     }
-
     @Then("main is (.*)")
     public void check_main(String main){
         assertEquals("Wrong main", main, response.getWeather().getMain());
     }
-
     @Then("description is (.*)")
     public void check_description(String description){
         assertEquals("Wrong description", description, response.getWeather().getDescription());
     }
-
     @Then("icon is (.*)")
     public void check_icon(String icon){
         assertEquals("Wrong icon", icon, response.getWeather().getIcon());
     }
-
     @Then("base is (.*)")
     public void check_base(String base){
         Assert.assertEquals("Wrong base", base, response.getBase().getBase());
