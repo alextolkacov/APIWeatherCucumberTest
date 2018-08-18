@@ -1,7 +1,5 @@
 package model;
 
-import cucumber.api.java.bs.I;
-
 public class Cod {
     private Integer cod;
 
